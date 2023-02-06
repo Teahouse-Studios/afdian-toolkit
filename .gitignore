@@ -1,0 +1,14 @@
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+bin/*
+.env
+dist
+.idea
+s.yaml
+.env.production
+.s
+node_modules

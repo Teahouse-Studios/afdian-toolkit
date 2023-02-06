@@ -1,0 +1,10 @@
+{
+  "name": "afdian-toolkit",
+  "packageManager": "yarn@3.4.1",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemailer": "^6.9.1"
+  }
+}
