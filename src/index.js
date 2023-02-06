@@ -15,8 +15,8 @@ app.use(require('body-parser').json({
         var transporter = nodemailer.createTransport(
             {
                 host: process.env.TRANSPORT_HOST,
-                port: 587,
-                secure: false,
+                port: process.env.TRANSPORT_PORT,
+                secure: true,
                 auth: {
                     user: process.env.TRANSPORT_USER,
                     pass: process.env.TRANSPORT_PWD,
