@@ -39,4 +39,7 @@ app.use(require('body-parser').json({
         });
         res.status(200).json({"ec":200} )
     })
-})
+    const server = app.listen(~~process.env.FC_SERVER_PORT || 15111)
+    server.timeout = 0
+    server.keepAliveTimeout = 0
+})()
