@@ -34,12 +34,12 @@ app.use(require('body-parser').json({
             transporter.sendMail(mailOptions, function (error, info) {
                 if (error) {
                     console.log(error);
+                    res.status(500).json({ "ec": 500 })
                 } else {
                     console.log('Email sent: ' + info.response);
+                    res.status(200).json({ "ec": 200 })
                 }
             });
-            res.status(200).json({ "ec": 200 })
-
         } catch (e) {
             res.status(500).json({
                 message: e.message,
